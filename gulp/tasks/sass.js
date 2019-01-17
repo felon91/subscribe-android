@@ -13,7 +13,7 @@ module.exports = function () {
         .pipe($.gp.csso())
         .pipe($.gp.rename('style.min.css'))
         .pipe($.gp.sourcemaps.write(''))
-        .pipe($.gulp.dest('build/css'))
+        .pipe($.gulp.dest('build/styles/freeandroid'))
         .pipe($.browserSync.stream());
   });
 };
