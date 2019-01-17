@@ -1,0 +1,176 @@
+.header {
+  position: relative;
+  background:
+          url('../../images/freeandroid/bg-bottom.png') center bottom no-repeat,
+          linear-gradient(180deg, #6208EB 0%, #8B3EFF 100%);
+}
+
+.header__wrap {
+  padding-bottom: 100px;
+  background: url('../../images/freeandroid/arrow.png') 30px 170px no-repeat;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url('../../images/freeandroid/figure.png') center bottom no-repeat;
+    width: 280px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translateX(-50%);
+  }
+
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__course {
+  max-width: 100%;
+  display: block;
+  margin-left: 90px;
+}
+
+.header__android {
+  position: absolute;
+  right: 3%;
+  bottom: 100px;
+}
+
+.header__men {
+  position: absolute;
+  left: 2%;
+  bottom: 100px;
+}
+
+.header__title {
+  color: $white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 53px;
+  margin: 0;
+  max-width: 770px;
+  margin-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url('../../images/freeandroid/men-two.png') calc(100% - 40px) 50px no-repeat;
+  padding-right: 225px;
+}
+
+.header__span {
+  color: $primary;
+}
+
+.header__form {
+  max-width: 470px;
+  flex-basis: 470px;
+  margin-right: 100px;
+  align-self: flex-start;
+}
+
+@media (min-width: 1920px) {
+
+  .header__android {
+    display: none;
+  }
+
+  .header__men {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .header__android {
+    right: 8%;
+  }
+
+  .header__men {
+    left: 8%;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .header__android {
+    display: none;
+  }
+
+  .header__men {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .header__course {
+    margin-left: 0;
+  }
+
+  .header__form {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .header__wrap {
+    background: none;
+  }
+
+  .header__title {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .header__wrap {
+    padding-bottom: 50px;
+  }
+
+  .header__title {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header__flex {
+    flex-direction: column;
+  }
+
+  .header__title {
+    background: none;
+    padding-right: 0;
+  }
+
+  .header__img {
+    margin: 0 auto 20px;
+  }
+
+  .header__form {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header__title {
+    font-size: 28px;
+  }
+
+}
