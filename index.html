@@ -14,8 +14,14 @@
 			<div class="form header__form">
 				<form name="sendForm" action="#" method="post">
 					<p class="form__title">Для получения курса заполните форму:</p>
-					<input name="name" type="text" placeholder="Введите ваше имя">
-					<input name="email" type="email" placeholder="Введите ваш Email">
+					<div class="form__input">
+						<label for="header-name">Введите ваше имя</label>
+						<input id="header-name" name="name" type="text" placeholder="Введите ваше имя">
+					</div>
+					<div class="form__input">
+						<label for="header-email">Введите ваш Email</label>
+						<input id="header-email" name="email" type="email" placeholder="Введите ваш Email">
+					</div>
 					<button type="submit">Получить курс</button>
 					<p class="form__subscribe">Подписка абсолютно бесплатная и добровольная. Вы сможете отписаться в любой момент.</p>
 				</form>
