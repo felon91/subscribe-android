@@ -1,0 +1,151 @@
+.bottom {
+  position: relative;
+  background:
+          url('../../images/freeandroid/bg-bottom-two.png') center bottom no-repeat,
+          linear-gradient(180deg, #6208EB 0%, #8B3EFF 100%);
+}
+
+.bottom__wrap {
+  padding-bottom: 100px;
+  position: relative;
+  background: url('../../images/freeandroid/arrow-two.png') 65% 205px no-repeat;
+}
+
+.bottom__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom__course {
+  max-width: 100%;
+  display: block;
+  margin-left: -60px;
+}
+
+.bottom__android {
+  position: absolute;
+  right: 3%;
+  bottom: 100px;
+}
+
+.bottom__mobile {
+  position: absolute;
+  right: 80px;
+  top: -100px;
+}
+
+.bottom__title {
+  color: $white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  max-width: 770px;
+  margin-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 260px;
+}
+
+.bottom__form {
+  max-width: 470px;
+  flex-basis: 470px;
+  flex-shrink: 0;
+  margin-right: 100px;
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
+@media (min-width: 1920px) {
+
+  .bottom__android {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .bottom__android {
+    right: 8%;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .bottom__android {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .bottom__wrap {
+    background: none;
+  }
+
+  .bottom__form {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .bottom__course {
+    margin-left: 0;
+  }
+
+  .bottom__title {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .bottom__wrap {
+    padding-bottom: 50px;
+  }
+
+  .bottom__title {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .bottom__flex {
+    flex-direction: column;
+  }
+
+  .bottom__title {
+    padding-right: 0;
+  }
+  
+  .bottom__mobile {
+    display: none;
+  }
+
+  .bottom__img {
+    margin: 0 auto 20px;
+  }
+
+  .bottom__form {
+    flex-basis: auto;
+    flex-shrink: 1;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .bottom__title {
+    font-size: 26px;
+  }
+
+}

@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".subscribe__form--two").validate({
+  $(".form__two").validate({
     rules: {
       name: {
         required: true,
